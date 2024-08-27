@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the service name
-SERVICE="httpd"
+SERVICE="nginx"
 
 # Check if the service is running
 if systemctl is-active --quiet $SERVICE; then
