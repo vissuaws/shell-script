@@ -3,6 +3,8 @@
 # Define the service name
 SERVICE="nginx"
 
+yum install $SERVICE -y
+
 # Check if the service is running
 if systemctl is-active --quiet $SERVICE; then
     echo "$SERVICE is already running."
